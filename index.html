@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1 id="welcome">WELCOME</h1>
+  <a href="login.html" id="logout">Close session</a>
+
+  <h2>Users</h2>
+  <form id="userForm">
+    <input type="text" id="username" placeholder="username" required>
+    <input type="text" id="email" placeholder="email" required>
+    <button type="submit">ADD / UPDATE</button>
+  </form>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="userlist"></tbody>
+  </table>
+
+  <script src="dates.js"></script>
+</body>

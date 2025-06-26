@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form img {
+  max-width: 100px;
+  margin: 0 auto 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+button {
+  padding: 12px;
+  background: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #45a049;
+}
+
+
+.box-visible {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+h1#welcome {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #f1f1f1;
+  background: #e91e63;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-bottom: 30px;
+}
+
+a:hover {
+  background: #c2185b;
+}
+
+
+#userList {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 500px;
+}
+
+#userList li {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#userList li strong {
+  font-size: 16px;
+}
+
+#userList li button {
+  background: #2196f3;
+  padding: 8px 12px;
+  font-size: 14px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+#userList li button:hover {
+  background: #1976d2;
+}
+
+
+#userList li button:last-child {
+  background: #f44336;
+}
+
+#userList li button:last-child:hover {
+  background: #d32f2f;
+}
+
+
+@media (max-width: 500px) {
+  form {
+    padding: 20px;
+  }
+
+  h1#welcome {
+    font-size: 2rem;
+  }
+
+  #userList li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  #userList li button {
+    margin-left: 0;
+  }
+}
